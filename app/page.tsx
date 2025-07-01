@@ -2,6 +2,8 @@
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { HotelCard } from '@/components/hotel/hotelCard';
+import { HotelBanner } from '@/components/layout/Banner';
+import { HotelDetailsContent } from '@/components/hotel/HotelDetailsContent';
 
 export default function HomePage() {
     // Dummy data for hotel cards
@@ -97,28 +99,44 @@ export default function HomePage() {
     ];
 
     return (
-        <div className="container mx-auto py-8 px-4">
-            <h2 className="text-2xl font-bold mb-6">You may also like</h2>
-            {/* Carousel for horizontal scrolling */}
-            <Carousel
-                opts={{
-                    align: "start",
-                    loop: true, // Enable looping for better UX
-                }}
-                className="w-full"
-            >
-                <CarouselContent className="-ml-4">
-                    {hotels.map((hotel, index) => (
-                        <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
-                            <div className="p-1">
-                                <HotelCard hotel={hotel} />
-                            </div>
-                        </CarouselItem>
-                    ))}
-                </CarouselContent>
-                <CarouselPrevious className="hidden md:flex" />
-                <CarouselNext className="hidden md:flex" />
-            </Carousel>
-        </div>
+        <>
+            <div>
+                <HotelBanner
+                    name="El Aurassi Hotel"
+                    tagline="Spacious, modern rooms with panoramic views of the Mediterranean Sea."
+                    images={[
+                        '/Rectangle17650.jpg',
+                        '/Rectangle17651.jpg',
+                        '/Rectangle17652.jpg',
+                        '/Rectangle17653.jpg',
+                    ]}
+                />
+                {/* Other content of your page */}
+            </div>
+            <HotelDetailsContent />
+            <div className="container mx-auto py-16 px-4">
+                <h2 className="text-2xl font-bold mb-6">You may also like</h2>
+                {/* Carousel for horizontal scrolling */}
+                <Carousel
+                    opts={{
+                        align: "start",
+                        loop: true, // Enable looping for better UX
+                    }}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-4">
+                        {hotels.map((hotel, index) => (
+                            <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                                <div className="p-1">
+                                    <HotelCard hotel={hotel} />
+                                </div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="hidden md:flex" />
+                    <CarouselNext className="hidden md:flex" />
+                </Carousel>
+            </div>
+        </>
     );
 }

@@ -1,10 +1,10 @@
-"use client"; // This is a Client Component due to useState and event handlers
+"use client";
 
 import Image from 'next/image';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star, Bed, Bath, Layout } from 'lucide-react';
-import { useState } from 'react'; // Import useState
+import { useState } from 'react';
 
 interface HotelCardProps {
     hotel: {
@@ -12,7 +12,7 @@ interface HotelCardProps {
         name: string;
         description: string;
         price: number;
-        rating: number; // This will be the initial rating
+        rating: number;
         beds: number;
         bathrooms: number;
         sqft: number;

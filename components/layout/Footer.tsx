@@ -8,7 +8,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  RectangleGogglesIcon,
   AppleIcon,
   ChromeIcon,
 } from "lucide-react";
@@ -36,7 +35,7 @@ export function Footer() {
           <p className="text-sm mb-6 max-w-sm text-gray-200 leading-relaxed">
             DayF Booking makes booking your next stay easy, affordable, and
             stress-free. With thousands of hotels worldwide, exclusive deals,
-            and secure payment options, we're here to help you find the perfect
+            and secure payment options, we are here to help you find the perfect
             place to stay, every time.
           </p>
           <div className="flex space-x-4 mb-6">
