@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Property Showcase Application
+=============================
 
-## Getting Started
+✨ Overview
+----------
 
-First, run the development server:
+This project is a modern web application built with Next.js and Tailwind CSS, designed to beautifully display property details, guest testimonials, and policy information. It features a responsive design, interactive elements like a testimonial carousel, and a clean, user-friendly interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🛠️ Technologies Used
+---------------------
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Next.js 14+**
+*   **React**
+*   **Tailwind CSS**
+*   **Lucide React**
+*   **Shadcn/ui**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📦 Getting Started
+------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to get the project up and running on your local machine.
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+*   Node.js (v18.x or later recommended)
+*   npm or Yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  **Clone the repository:**
+    
+        git clone https://github.com/mahadi-zulfiker/SparkTech-Job-Task
+        cd SparkTech-Job-Task
+    
+2.  **Install dependencies:**
+    
+        npm install
+        # or
+        yarn install
+    
+    ### Running the Development Server
+    
+        npm run dev
+        # or
+        yarn dev
+    
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+    
+    🤝 Contributing
+    ---------------
+    
+    Contributions are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
+    
+    📄 License
+    ----------
+    
+    This project is open-sourced under the MIT License.
