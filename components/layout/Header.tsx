@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Search, ChevronDown, Menu} from 'lucide-react';
+import { Search, ChevronDown, Menu, User } from 'lucide-react';
 import logo from "../../public/LOGO.jpg";
 import spain from "../../public/spanish.jpg";
 
@@ -67,7 +67,7 @@ export function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
                     {/* Ensure you provide width and height for local images */}
-                    <Image src={logo} alt="DAYF Booking Logo"className="font-bold text-lg text-gray-800" />
+                    <Image src={logo} alt="DAYF Booking Logo" className="font-bold text-lg text-gray-800" />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -84,7 +84,7 @@ export function Header() {
                 {/* Currency Dropdown (Desktop only) */}
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                        <Button variant="ghost" className="hidden md:flex items-center text-gray-700">
+                        <Button variant="ghost" className="hidden md:flex items-center text-gray-700 cursor-pointer">
                             $ <ChevronDown className="ml-1 h-4 w-4" />
                         </Button>
                     </DropdownMenuTrigger>
@@ -97,7 +97,7 @@ export function Header() {
                 {/* Language Dropdown (Desktop only) */}
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                        <Button variant="ghost" className="hidden md:flex items-center text-gray-700">
+                        <Button variant="ghost" className="hidden md:flex items-center text-gray-700 cursor-pointer">
                             {/* Ensure you provide width and height for local images */}
                             <Image src={spain} alt="Spanish Flag" width={20} height={15} className="mr-1 rounded" />
                             <ChevronDown className="ml-1 h-4 w-4" />
@@ -110,7 +110,7 @@ export function Header() {
                 </DropdownMenu>
 
                 {/* List your property Button (Desktop only) */}
-                <Button variant="outline" className="hidden md:flex items-center space-x-2 text-primary-foreground bg-primary hover:bg-primary/90">
+                <Button variant="outline" className="hidden md:flex items-center space-x-2 text-primary-foreground bg-primary cursor-pointer">
                     <span>List your property</span>
                     <Search className="h-4 w-4" />
                 </Button>
@@ -125,9 +125,9 @@ export function Header() {
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         <Button variant="ghost" className="rounded-full h-9 w-9 p-0 flex items-center justify-center">
-                            <Avatar className="h-8 w-8 border border-gray-300">
+                            <Avatar className="h-8 w-8 border border-gray-300 cursor-pointer">
                                 <AvatarImage src="/images/user-avatar.png" alt="User Avatar" /> {/* Placeholder */}
-                                <AvatarFallback className="text-sm font-medium text-gray-600 bg-gray-200">SN</AvatarFallback>
+                                <AvatarFallback className="text-sm font-medium text-gray-600 bg-gray-200"><User /></AvatarFallback>
                             </Avatar>
                             <span className="sr-only">Open user menu</span>
                         </Button>
